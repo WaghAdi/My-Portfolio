@@ -7,6 +7,7 @@
 .container{
   max-width: 1300px;
   margin: auto;
+  padding: 20px 30px;
 }
 
 .navbar{
@@ -75,6 +76,31 @@ nav ul li a{
     .toggle{
        display: block;
     }
+}
+
+
+/* HERO SECTION  */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.col-6{
+    flex-basis: 50%;
+}
+
+/* left-hero */
+.left-hero button {
+    background-color: tomato;
+    font-size: 22px;
+    padding: 10PX 15px;
+    border: none;
+    border-radius: 15px;
+}
+.left-hero button:hover{
+cursor: pointer;
+background-color: rgb(38, 108, 212);
+
 }
 
    
