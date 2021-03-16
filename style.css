@@ -103,6 +103,19 @@ background-color: rgb(38, 108, 212);
 
 }
 
+.profile img{
+    width: 80%;
+}
+@media(max-width:400px){
+    .profile img{
+        width: 100%;
+    }
+}
+.basic_info span{
+    padding: 8px 0px;
+    margin: 4px 0px
+}
+
    
   
 
