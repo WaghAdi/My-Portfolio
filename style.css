@@ -28,10 +28,23 @@
 
 }
 .title h1:hover:before{
-   
-   width: 170px;
-
-
+    
+    width: 170px;
+    
+    
+}
+@media(max-width:600px){
+    .title-container{
+        padding:  0px;
+        margin:  0px;
+    }
+    .title h1::before{
+        content: "";
+        height: 0px;
+        width: 0px;
+      
+    
+    }
 }
 
 
@@ -216,15 +229,32 @@ background-color: rgb(38, 108, 212);
    font-size: 3rem;
    margin-top: 30px ;
 }
-.contact {
+.visit {
     display: flex;
     justify-content: center;
 }
-.contact img {
-  border-radius: 50%;
-  width: 60px;
-  margin: 0px 30px ;
-  padding: 5px ;
+.visit img {
+    border-radius: 50%;
+    width: 60px;
+    margin: 0px 30px ;
+    padding: 5px ;
+}
+
+
+@media(max-width:600px){
+    
+    .t h1{
+       font-size: 4rem;
+    }
+    .t p{
+       font-size: 2.3rem;
+       margin-top: 0px ;
+    }
+    .hero{
+        height: 60vh;
+    }
+    
+
 }
 
 /* letter box  */
@@ -232,6 +262,9 @@ background-color: rgb(38, 108, 212);
     transition: all 0.9s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 25px 15px;
+}
+.box-row{
+    margin:42px 14px;
 }
 .box:hover  {
     background-color: rgb(37 208 217);
@@ -269,7 +302,15 @@ background-color: rgb(38, 108, 212);
    font-size: 2rem;
    text-align: center;
 }
+@media(max-width:600px){
+    .box{
+        margin: 23px 0px;
+    }
+    .box-row{
+        margin:0px;
+    }
 
+}
 
 /* testimonial */
 /* .testi{
@@ -324,7 +365,21 @@ background-color: rgb(38, 108, 212);
 .text-info{
    text-align: justify;
 }
-
+@media(max-width:600px){
+    .text-info{
+        margin:30px 0px;
+    }
+    .about{
+        padding: 0px;
+    }
+    .about-img{
+        display: block;
+        margin: auto;
+    }
+    .text-info{
+       text-align: center;
+    }
+}
 
 /* my skills  */
 .my-skill{
