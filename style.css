@@ -4,6 +4,42 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+/* HEADING  */
+.title-container{
+    padding: 15px 0px;
+    margin: 30px 0px;
+}
+.title{
+    position: relative;
+    padding: 50px 20px;
+    
+    
+}
+.title h1::before{
+    content: "";
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    height: 5px;
+   width:0px;
+   background-color: violet;
+   transition: all 0.5s ease-in-out;
+
+}
+.title h1:hover:before{
+   
+   width: 170px;
+
+
+}
+
+
+
+header{
+    position: sticky !important;
+    top: 0px;
+}
 .container{
   max-width: 1300px;
   margin: auto;
@@ -41,8 +77,37 @@ nav ul li a{
    text-decoration: none;
    padding: 5px 8px;
    color: tomato;
+   position: relative;
    
 } 
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(206 254 142);
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0px;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(206 254 142);
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+
 .toggle{
     width: 40px;
     display: none;
@@ -141,7 +206,7 @@ background-color: rgb(38, 108, 212);
     width: 100%;
 }  
 .t{
-    margin: 50px 0px;
+    margin-top: 50px ;
     padding: 70px 0px;
 }
 .t h1{
@@ -149,7 +214,17 @@ background-color: rgb(38, 108, 212);
 }
 .t p{
    font-size: 3rem;
-   margin: 30px 0px ;
+   margin-top: 30px ;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+}
+.contact img {
+  border-radius: 50%;
+  width: 60px;
+  margin: 0px 30px ;
+  padding: 5px ;
 }
 
 /* letter box  */
@@ -193,4 +268,136 @@ background-color: rgb(38, 108, 212);
 .box-info h4{
    font-size: 2rem;
    text-align: center;
+}
+
+
+/* testimonial */
+/* .testi{
+    display: flex;
+    justify-content: space-around; */
+    .testi-img {
+        height: 260px;
+        width: 260px;
+        display: block;
+        margin: auto;
+    }
+.testi-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  
+
+}
+
+
+.item {
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    padding: 20px 10px;
+    background-color: #a6dbca;
+}
+
+
+/* about mi  17-03 */
+.about{
+    align-items: flex-start !important;
+    padding: 50px;
+}
+.about a{
+    
+        color: #fd2e0d;
+        text-decoration: none;
+    
+}
+.about-img{
+    width: 300px;
+    height: 280px;
+    transition: transform 0.9s ease-in-out;
+}
+.about-img :hover {
+    transform: scale(0.90);
+    border: 3px solid rgb(219 73 17);
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.text-info{
+   text-align: justify;
+}
+
+
+/* my skills  */
+.my-skill{
+    padding: 30px 20px;
+    margin-bottom: 50px;
+}
+.bar{
+    margin: 10px;
+    padding: 2px  ;
+}
+.bar-percent{
+float: right;
+}
+
+
+
+/* contact mi  */
+.contact{
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    padding-top: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.contact .row{ 
+   align-items: baseline;
+}
+.address {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+}
+.icon i{
+    font-size: 30px;
+}
+.information{
+    margin-left: 45px;
+}
+.msg_me{
+    margin: 15px 0px;
+}
+
+.msg_me input{
+    width: 100%;
+    padding: 10px;
+    /* border-radius: 20px; */
+    background-color: black;
+    color: white;
+}
+textarea{
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    color: white;
+}
+.submit input{
+    display: block;
+   
+    padding: 11px 50px;
+    background-color: #0078ff;
+    border-radius: 40px;
+    border: none;
+    font-size: 21px;
+    margin: 30px auto;
+    color: white;
+   
+}
+
+
+/* copyright  */
+.copyright{
+    background-color: black;
+    padding-top: 28px ;
+    color: white;
 }
