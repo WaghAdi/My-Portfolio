@@ -38,3 +38,15 @@ $('.owl-carousel').owlCarousel({
       }
   }
 })
+
+
+var typed = new Typed('.element', {
+  strings: [
+   'PROGRAMMER',
+   'FREELANCER',
+   'WEB_DEVELOPER'],
+   typeSpeed: 90,
+   backSpeed: 90,
+   loop: true,
+  smartBackspace: true // Default value
+});
